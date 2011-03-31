@@ -1,0 +1,16 @@
+
+Initial version of the perl form of mp3slurp.
+
+As the existing code is written, curl is required to
+live in /usr/bin/curl.  This could be rewritten to use
+WWW::Curl.
+
+mp3list.pl will scrape a given webpage for all the
+mp3s links, and return a list of urls to the mp3s.
+
+mp3slurpl.pl takes a list of urls, and downloads
+each one using curl.  
+
+Usage:
+
+perl mp3list.pl <website> | perl mp3slurp.pl
